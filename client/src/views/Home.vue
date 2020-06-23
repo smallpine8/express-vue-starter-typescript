@@ -1,22 +1,19 @@
 <template>
     <div class="home">
-        <MyButton :greet="greetText" @click="onMyButtonClicked"></MyButton>
+      <hello-world
+        msg="Hello Vue.js with TypeScript"
+      />
     </div>
 </template>
 
 <script lang="ts">
   import { Component, Vue } from 'vue-property-decorator';
-  import MyButton from "@/components/MyButton.vue";
+  import HelloWorld from "@/components/HelloWorld.vue";
 
   @Component({
     components: {
-      MyButton,
+      HelloWorld,
     },
   })
-  export default class Home extends Vue {
-    public greetText = "Hello";
-    public onMyButtonClicked(){
-      this.greetText = "こんにちは";
-    }
-  }
+  export default class Home extends Vue {}
 </script>
