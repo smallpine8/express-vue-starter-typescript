@@ -1,4 +1,4 @@
-# vue-ts-example
+# express-vue-starter-typescript
 
 |実行環境、使用ライブラリ|ver|
 |---|---|
